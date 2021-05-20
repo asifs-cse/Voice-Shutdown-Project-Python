@@ -3,6 +3,7 @@ import speech_recognition as sr
 import os
 def take_comments():
     r = sr.Recognizer()
+
     with sr.Microphone() as source:
         print('Listening...')
         r.pause_threshold = 0.7
